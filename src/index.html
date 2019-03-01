@@ -11,17 +11,27 @@
 
 <body>
 
-    <header>
-        <img src="img/sinfo-logo.png" href="index.html">
-        <nav>
-            <a href="#schedule" class="sm-scroll">schedule</a>
-            <a href="#speakers" class="sm-scroll">speakers</a>
-            <a href="#sponsors" class="sm-scroll">sponsors</a>
+    <header class="flex-between">
+        <img src="img/sinfo-logo.png" href="index.html" class="logo">
+        <nav class="desktop-nav">
+            <a href="#" class="sm-scroll">schedule</a>
+            <a href="#" class="sm-scroll">speakers</a>
+            <a href="#" class="sm-scroll">sponsors</a>
             <a href="#">previous editions</a>
+        </nav>
+        <nav class="mobile-nav">
+            <img src="img/menu-icon.svg" class="menu-icon pointer">
         </nav>
     </header>
 
-    <section id="hero" class="hero">
+    <div class="mobile-menu">
+        <a href="#schedule" class="sm-scroll white pd-btm-5">schedule</a>
+        <a href="#speakers" class="sm-scroll white pd-btm-5">speakers</a>
+        <a href="#sponsors" class="sm-scroll white pd-btm-5">sponsors</a>
+        <a href="#" class="white pd-btm-5">previous editions</a>
+    </div>
+
+    <section id="hero" class="hero grid">
         <div class="hero-grid-1">
             <img src="img/computer.svg">
         </div>
@@ -35,28 +45,28 @@
         </div>
         <div class="hero-grid-4">
             <a href="#schedule" class="sm-scroll">
-                <img src="img/arrow.svg">
+                <img src="img/arrow.svg" class="pointer">
             </a>
 
         </div>
     </section>
 
-    <section id="schedule" class="schedule full-height">
-        <div class="schedule-header pd-btm-5">
+    <section id="schedule" class="schedule full-height flex">
+        <div class="schedule-header pd-btm-5 flex-between">
             <h2 class="white bold">Schedule</h2>
             <a class="button white">download schedule</a>
         </div>
 
         <div class="accordion-container">
             <div class="accordion">
-                <div class="acc-content">
+                <div class="acc-content flex-between pointer">
                     <p class="white"><span class="bold">Software</span> — 18.02.2019</p>
                     <div class="plus">
                         <img src="img/plus.svg">
                     </div>
                 </div>
                 <div class="panel">
-                    <div class="panel-menu pd-btm-5">
+                    <div class="panel-menu flex pointer pd-btm-5">
                         <a class="white">presentations</a>
                         <a class="white">keynotes</a>
                         <a class="white">workshops</a>
@@ -72,14 +82,14 @@
                 </div>
             </div>
             <div class="accordion">
-                <div class="acc-content">
+                <div class="acc-content flex-between pointer">
                     <p class="white"><span class="bold">Multimedia</span> — 19.02.2019</p>
                     <div class="plus">
                         <img src="img/plus.svg">
                     </div>
                 </div>
                 <div class="panel">
-                    <div class="panel-menu pd-btm-5">
+                    <div class="panel-menu flex pointer pd-btm-5">
                         <a class="white">presentations</a>
                         <a class="white">keynotes</a>
                         <a class="white">workshops</a>
@@ -95,14 +105,14 @@
                 </div>
             </div>
             <div class="accordion">
-                <div class="acc-content">
+                <div class="acc-content flex-between pointer">
                     <p class="white"><span class="bold">Security</span> — 20.02.2019</p>
                     <div class="plus">
                         <img src="img/plus.svg">
                     </div>
                 </div>
                 <div class="panel">
-                    <div class="panel-menu pd-btm-5">
+                    <div class="panel-menu flex pointer pd-btm-5">
                         <a class="white">presentations</a>
                         <a class="white">keynotes</a>
                         <a class="white">workshops</a>
@@ -118,14 +128,14 @@
                 </div>
             </div>
             <div class="accordion">
-                <div class="acc-content">
+                <div class="acc-content flex-between pointer">
                     <p class="white"><span class="bold">Games</span> — 21.02.2019</p>
                     <div class="plus">
                         <img src="img/plus.svg">
                     </div>
                 </div>
                 <div class="panel">
-                    <div class="panel-menu pd-btm-5">
+                    <div class="panel-menu flex pointer pd-btm-5">
                         <a class="white">presentations</a>
                         <a class="white">keynotes</a>
                         <a class="white">workshops</a>
@@ -141,14 +151,14 @@
                 </div>
             </div>
             <div class="accordion">
-                <div class="acc-content">
+                <div class="acc-content flex-between pointer">
                     <p class="white"><span class="bold">AI</span> — 22.02.2019</p>
                     <div class="plus">
                         <img src="img/plus.svg">
                     </div>
                 </div>
                 <div class="panel">
-                    <div class="panel-menu pd-btm-5">
+                    <div class="panel-menu flex pointer pd-btm-5">
                         <a class="white">presentations</a>
                         <a class="white">keynotes</a>
                         <a class="white">workshops</a>
@@ -166,10 +176,10 @@
         </div>
     </section>
 
-    <section id="speakers" class="speakers">
+    <section id="speakers" class="speakers flex">
         <h2>Speakers</h2>
-        <div class="speakers-container">
-            <img src="img/arrow.svg" class="prev">
+        <div class="speakers-container flex">
+            <img src="img/arrow.svg" class="prev pointer">
             <div class="speaker">
                 <img src="img/speaker-1.jpg" class="pd-btm-2">
                 <p class="bold speaker-title">Diana Kelley</p>
@@ -185,19 +195,19 @@
                 <p class="bold speaker-title">Bing Wei</p>
                 <p>Staff Software Engineer @ Slack</p>
             </div>
-            <img src="img/arrow.svg" class="next">
+            <img src="img/arrow.svg" class="next pointer">
         </div>
     </section>
 
-    <section id="cta" class="cta full-height">
-        <div class="cta-grid-1 white">
+    <section id="cta" class="cta full-height grid">
+        <div class="cta-grid-1 white flex">
             <h3 class="pd-btm-2">Sign up!</h3>
             <p class="pd-btm-5">Be the first to receive the latest updates from SINFO!</p>
             <a class="button white">subscribe</a>
         </div>
         <div class="cta-grid-2"></div>
         <div class="cta-grid-3"></div>
-        <div class="cta-grid-4 white">
+        <div class="cta-grid-4 white flex">
             <h3 class="pd-btm-2">Upload your CV</h3>
             <p class="pd-btm-5">New to the job market or looking for a new challenge? Send us your CV and
                 every company present at SINFO will receive it!</p>
@@ -205,9 +215,9 @@
         </div>
     </section>
 
-    <section id="sponsors" class="sponsors full-height">
+    <section id="sponsors" class="sponsors full-height flex">
         <h2>Sponsors</h2>
-        <div class="sponsors-container">
+        <div class="sponsors-container grid">
             <img src="img/accenture.png">
             <img src="img/deloitte.png">
             <img src="img/imaginary-cloud.png">
@@ -220,7 +230,7 @@
         </div>
     </section>
 
-    <footer class="white">
+    <footer class="white flex-between">
         <div class="footer-1">
             <p class="pd-btm-5">Made with love at SINFO</p>
             <p>Code available <a href="https://github.com/leandrodcc/ist-exercise" class="bold white">here</a></p>

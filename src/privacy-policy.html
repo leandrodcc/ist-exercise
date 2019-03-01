@@ -10,18 +10,28 @@
 </head>
 
 <body>
-    <header>
-        <img src="img/sinfo-logo.png" href="index.html">
-        <nav>
-            <a href="index.html/#schedule" class="sm-scroll">schedule</a>
-            <a href=index.html/#speakers" class="sm-scroll">speakers</a>
-            <a href="index.html/#sponsors" class="sm-scroll">sponsors</a>
+    <header class="flex-between">
+        <img src="img/sinfo-logo.png" href="index.html" class="logo">
+        <nav class="desktop-nav">
+            <a href="#schedule" class="sm-scroll">schedule</a>
+            <a href="#speakers" class="sm-scroll">speakers</a>
+            <a href="#sponsors" class="sm-scroll">sponsors</a>
             <a href="#">previous editions</a>
+        </nav>
+        <nav class="mobile-nav">
+            <img src="img/menu-icon.svg" class="menu-icon pointer">
         </nav>
     </header>
 
-    <section class="content-page full-height">
-        <div class="content-1">
+    <div class="mobile-menu">
+        <a href="#" class="sm-scroll white pd-btm-5">schedule</a>
+        <a href="#" class="sm-scroll white pd-btm-5">speakers</a>
+        <a href="#" class="sm-scroll white pd-btm-5">sponsors</a>
+        <a href="#" class="white pd-btm-5">previous editions</a>
+    </div>
+
+    <section class="content-page full-height flex">
+        <div class="content-1 flex">
             <img src="img/computer.svg" class="pd-btm-5">
             <h2 class="white">Privacy Policy</h2>
         </div>
@@ -60,7 +70,7 @@
         </div>
     </section>
 
-    <footer class="white">
+    <footer class="white flex-between">
         <div class="footer-1">
             <p class="pd-btm-5">Made with love at SINFO</p>
             <p>Code available <a href="https://github.com/leandrodcc/ist-exercise" class="bold white">here</a></p>
@@ -82,5 +92,5 @@
         </div>
     </footer>
 </body>
-
+<script src="js/app.js"></script>
 </html>

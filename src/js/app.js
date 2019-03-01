@@ -1,4 +1,7 @@
+import {toggleMenu} from './header'
 import {accordion, scheduleInfo} from './schedule'
+
+toggleMenu()
 
 const scrollLinks = document.querySelectorAll('.sm-scroll')
 scrollLinks.forEach(link => {

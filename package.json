@@ -1,0 +1,38 @@
+{
+  "name": "ist-exercise",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leandrodcc/ist-exercise.git"
+  },
+  "author": "Leandro Contreras",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leandrodcc/ist-exercise/issues"
+  },
+  "homepage": "https://github.com/leandrodcc/ist-exercise#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "autoprefixer": "^9.4.2",
+    "browser-sync": "^2.26.3",
+    "gh-pages": "^2.0.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "postcss-preset-env": "^6.4.0",
+    "webpack-stream": "^5.2.1"
+  },
+  "dependencies": {
+    "tiny-slider": "^2.9.1"
+  }
+}

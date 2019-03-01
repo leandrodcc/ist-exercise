@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'Klavika Medium';
+    src: url(fonts/Klavika-Medium.woff), url(fonts/Klavika-Medium.otf);
+ }
+
+@font-face {
+    font-family: 'Klavika Bold';
+    src: url(fonts/Klavika-Bold.woff), url(fonts/Klavika-Bold.otf);
+}
+
+:root {
+    --small-spacing: 0.5px;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    line-height: 1.3;
+    letter-spacing: 0.2px;
+    color: var(--purple);
+}
+
+a {
+    color: var(--purple);
+    letter-spacing: var(--small-spacing);
+    text-decoration: none;
+}
+
+h1 {
+    font-family: 'Klavika Bold';
+    font-size: 68px;
+}
+
+h2 {
+    font-family: 'Klavika Bold';
+    font-size: 48px;
+}
+
+h3 {
+    font-family: 'Klavika Medium';
+    font-size: 38px;
+    line-height: 1.2;
+}
+
+/* class for h1, h2 and body text spans */
+.bold {
+    font-weight: bold;
+}
+
+.cyan-1 {
+    color: var(--cyan-1);
+}
+
+.white {
+    color: #fff;
+}

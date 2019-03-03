@@ -1,5 +1,6 @@
 import {toggleMenu} from './header'
 import {accordion, scheduleInfo} from './schedule'
+import {next, nextSlide, prev, prevSlide} from './speakers'
 
 toggleMenu()
 
@@ -22,6 +23,14 @@ panelLinks.forEach((link, i) => {
         const content = document.querySelector('.panel-content')
         content.innerHTML = scheduleInfo[i].info
     })
+})
+
+next.addEventListener('click', () => {
+    nextSlide()
+})
+
+prev.addEventListener('click', () => {
+    prevSlide()
 })
 
 

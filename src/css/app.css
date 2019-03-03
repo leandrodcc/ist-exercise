@@ -22,6 +22,21 @@
     100% {transform: translateY(0);}
 } 
 
+body::-webkit-scrollbar {
+    width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #D0D0F4;
+    opacity: 0.3;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--blue);
+    outline: 2px solid slategrey;
+    border-radius: 10px;
+}
+
 body {
     width: 100%;
     height: 100%;
@@ -193,16 +208,33 @@ header nav a:hover:after {
 }
 
 /* speakers section */
+.slideshow {
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+}
+  
+.holder {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 200vw;
+    transition: left 1s;
+    will-change: left;
+}
+  
+.slide {
+    width: 100vw;
+    align-items: center;
+    justify-content: space-around;
+}
+
 .speakers {
     min-height: 90vh;
     flex-direction: column;
     justify-content: space-evenly;
     text-align: center;
-}
-
-.speakers-container {
-    align-items: center;
-    justify-content: space-around;
+    overflow: hidden;
 }
 
 .speaker img {
@@ -221,14 +253,19 @@ header nav a:hover:after {
 
 .prev, .next {
     width: 4vw;
+    z-index: 1;
+    position: absolute;
+    top: 30%;
 }
 
 .prev {
     transform: rotate(90deg);
+    left: 0;
 }
 
 .next {
     transform: rotate(-90deg);
+    right: 1.3vw;
 }
 
 /* cta section */
@@ -414,8 +451,29 @@ footer {
         min-height: 50vh;
     }
 
-    .speakers-container div:nth-child(3) {
-        display: none;
+    .slide {
+        justify-content: space-between;
+    }
+
+    .speaker {
+        padding: 0 4vw;
+    }
+
+    .speaker img {
+        width: auto;
+    }
+
+    .speaker p {
+        max-width: none;
+        font-size: 16px;
+    }
+
+    .prev, .next {
+        width: 7vw;
+    }
+
+    .next {
+        right: 0;
     }
 
     .cta {
@@ -551,6 +609,14 @@ footer {
         min-height: 60vh;
     }
 
+    .slide {
+        align-items: flex-start;
+    }
+
+    .speaker p {
+        font-size: 14px;
+    }
+
     .next, .prev {
         width: 10vw;
     }
@@ -574,5 +640,13 @@ footer {
     .social-icons img {
         width: 6vw;
         margin-right: 4vw;
+    }
+
+    .content-1 {
+        align-items: flex-start;
+    }
+
+    .content-1 img {
+        display: none;
     }
 }

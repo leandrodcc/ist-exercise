@@ -353,6 +353,10 @@ footer {
     width: 10vw;
 }
 
+.js-need {
+    display: none;
+}
+
 /* responsive styles */
 @media (--large) {
     .hero-grid-2 h1 {
@@ -605,6 +609,14 @@ footer {
         width: 40vw;
     }
 
+    .acc-content img {
+        width: 18px;
+    }
+
+    .panel-menu.pd-btm-5 {
+        padding-bottom: 4.5vh;
+    }
+
     .speakers {
         min-height: 85vh;
     }
@@ -626,7 +638,7 @@ footer {
     }
 
     .sponsors-container img {
-        width: 80px;
+        width: 100px;
     }
 
     footer {
